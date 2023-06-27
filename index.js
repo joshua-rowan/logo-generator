@@ -3,10 +3,10 @@ const inquirer = require('inquirer');
 const {Triangle, Circle, Square} = require('./lib/shapes');
 
 //Function to generate the SVG file
-// function generateSVG(shape, color) {
-//     console.log(shape);
-//     console.log(color);
-// }
+function generateSVG(shape, color) {
+    console.log(shape);
+    console.log(color);
+}
 
 //Write the SVG markup to the file
 
@@ -41,3 +41,7 @@ inquirer
             message: 'Enter the shape color (keyword or hexadecimal number)',
         }
     ])
+    .then((answers) => {
+        const {shape, shapeColor} = answers;
+        generateSVG(shape, shapeColor);
+    })
