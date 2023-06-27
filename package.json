@@ -1,0 +1,26 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "Command-line utility to generate logos based on user input",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshua-rowan/logo-generator.git"
+  },
+  "author": "Joshua Rowan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshua-rowan/logo-generator/issues"
+  },
+  "homepage": "https://github.com/joshua-rowan/logo-generator#readme",
+  "dependencies": {
+    "inquirer": "^9.2.7"
+  }
+}
