@@ -65,3 +65,6 @@ inquirer
         const {shape, shapeColor} = answers;
         generateSVG(shape, shapeColor);
     })
+    .catch((error) => {
+        console.log('An error occurred:', error);
+    });
