@@ -4,8 +4,28 @@ const {Triangle, Circle, Square} = require('./lib/shapes');
 
 //Function to generate the SVG file
 function generateSVG(shape, color) {
-    console.log(shape);
-    console.log(color);
+    let svgMarkup;
+    switch (shape) {
+        case 'circle':
+            const circle = new Circle(color);
+            svgMarkup = circle.render();
+            break;
+        case 'triangle':
+            const triangle = new Triangle(color);
+            svgMarkup = triangle.render();
+            break;
+        case 'square':
+            const square = new Square(color);
+            svgMarkup = square.render();
+            break;
+        default:
+            console.log('Invalid shape selection.');
+            return;
+    }
+
+    fs.writeFileSync('logo.svg', svgMarkup);
+
+    console.log('Generated log.svg');
 }
 
 //Write the SVG markup to the file
