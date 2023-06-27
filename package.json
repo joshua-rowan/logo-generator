@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/joshua-rowan/logo-generator#readme",
   "dependencies": {
-    "inquirer": "^9.2.7"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
     "jest": "^29.5.0"
