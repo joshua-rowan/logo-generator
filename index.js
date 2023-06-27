@@ -23,9 +23,13 @@ function generateSVG(shape, color) {
             return;
     }
 
-    fs.writeFileSync('logo.svg', svgMarkup);
+    const wrappedSVGMarkUp = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    ${svgMarkup}
+    </svg>`;
 
-    console.log('Generated log.svg');
+    fs.writeFileSync('logo.svg', wrappedSVGMarkUp);
+
+    console.log('Generated logo.svg');
 }
 
 //Write the SVG markup to the file
