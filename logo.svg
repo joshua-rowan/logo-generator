@@ -1,1 +1,1 @@
-<circle cx="150" cy="100" r="100" fill="blue"/>
+<polygon points="150,0 300,200 0,200" fill="ffff" />
