@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const {Triangle, Circle, Square} = require('./shapes');
+const {Triangle, Circle, Square} = require('./lib/shapes');
 
 //Function to generate the SVG file
 // function generateSVG(shape, color) {
@@ -21,6 +21,7 @@ inquirer
                 if (input.length > 3) {
                     return 'Please enter no more than 3 characters.';
                 }
+                return true;
             }
         },
         {
