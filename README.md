@@ -11,7 +11,7 @@
 
 ## Description
 
-This application will dynamically build a README.md file based off of a user's input.
+This application will dynamically build a logo in a svg file based off of a user's input.
 
 ## Video Example
 https://drive.google.com/file/d/1P5VFqoaamEccUnBGSinhR5kfoLfP_Iom/view?usp=sharing  
