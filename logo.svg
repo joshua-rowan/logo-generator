@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-    <rect x="30" y="0" width="230" height="200" fill="red"/>
-    <text x="150" y="125" fill="black" text-anchor="middle" font-size="100">JRR</text>
+    <polygon points="150,0 300,200 0,200" fill="red" />
+    <text x="150" y="125" fill="Black" text-anchor="middle" font-size="100">JRR</text>
     </svg>
