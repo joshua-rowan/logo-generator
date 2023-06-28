@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const {Triangle, Circle, Square} = require('./lib/shapes');
 
 //Function to generate the SVG file
-function generateSVG(shape, color) {
+function generateSVG(shape, color, text, textColor) {
     let svgMarkup;
     switch (shape) {
         case 'circle':
@@ -69,8 +69,8 @@ inquirer
         }
     ])
     .then((answers) => {
-        const {shape, shapeColor} = answers;
-        generateSVG(shape, shapeColor);
+        const {shape, shapeColor, text, textColor} = answers;
+        generateSVG(shape, shapeColor, text, textColor);
     })
     .catch((error) => {
         console.log('An error occurred:', error);
