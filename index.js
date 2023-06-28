@@ -23,9 +23,9 @@ function generateSVG(shape, color, text, textColor) {
             return;
     }
 
-    const textElement = `<text x="150" y="125" fill="${textColor}" text-anchor="middle" font-size="100">${text}</text>`;
+    const textElement = `<text x="165" y="145" fill="${textColor}" text-anchor="middle" font-size="100">${text}</text>`;
 
-    const wrappedSVGMarkUp = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    const wrappedSVGMarkUp = `<svg xmlns="http://www.w3.org/2000/svg" width="350" height="250">
     ${svgMarkup}
     ${textElement}
     </svg>`;
