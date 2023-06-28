@@ -23,7 +23,7 @@ function generateSVG(shape, color, text, textColor) {
             return;
     }
 
-    const textElement = `<text x="150" y="100" fill="${textColor}" text-anchor="middle">${text}</text>`;
+    const textElement = `<text x="150" y="100" fill="${textColor}" text-anchor="middle" font-size="100">${text}</text>`;
 
     const wrappedSVGMarkUp = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
     ${svgMarkup}
